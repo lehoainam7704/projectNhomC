@@ -1,5 +1,36 @@
 @extends('admin_user.layout_home')
 @section('content')
+<head>
+    <style>
+       .table {
+    background-color: #e99226; /* Màu nền của bảng */
+    border-radius: 10%;
+}
+
+.table th,
+.table td {
+    border-radius: 10%;
+    background-color: #a24949; /* Màu nền của các ô trong bảng */
+    font-size: 13px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1f1f1; /* Màu nền xen kẽ cho các dòng trong bảng */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef; /* Màu nền khi di chuột qua các dòng trong bảng */
+}
+.table th,
+.table td,
+.table a {
+    color: #ffffff; /* Màu chữ cho các ô và tiêu đề trong bảng */
+}
+.table a:hover {
+    color: #ffff; /* Màu chữ khi rê chuột qua nút */
+}
+    </style>
+</head>
 <div class="container">
     <div class="row" style="margin:20px;">
         <div class="col-12">

@@ -1,5 +1,36 @@
 @extends('admin_product.layout_home')
 @section('content')
+<head>
+    <style>
+       .table {
+    background-color: #e99226; /* Màu nền của bảng */
+    border-radius: 10%;
+}
+
+.table th,
+.table td {
+    border-radius: 10%;
+    background-color: #a24949; /* Màu nền của các ô trong bảng */
+    font-size: 13px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1f1f1; /* Màu nền xen kẽ cho các dòng trong bảng */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef; /* Màu nền khi di chuột qua các dòng trong bảng */
+}
+.table th,
+.table td,
+.table a {
+    color: #ffffff; /* Màu chữ cho các ô và tiêu đề trong bảng */
+}
+.table a:hover {
+    color: #ffff; /* Màu chữ khi rê chuột qua nút */
+}
+    </style>
+</head>
     <div class="container">
         <div class="row" style="margin:20px;">
             <div class="col-12">
@@ -41,14 +72,14 @@
                                         <td>{{ $item->type_name }}</td>
 
                                         <td>
-                                        <a href="{{ route('admin_product.show', $item->id) }}" class="btn btn-info btn-sm">View</a>
-                                        <a href="{{ route('admin_product.edit', $item->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                        <a href="{{ route('admin_product.show', $item->id) }}" class="btn btn-info btn-sm table" style="background-color: green">View</a>
+                                        <a href="{{ route('admin_product.edit', $item->id) }}" class="btn btn-primary btn-sm table">Edit</a>
 
                                                 <form method="POST" action="{{ route('admin_product.destroy', $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Product" onclick="return confirm('Are you sure you want to delete this product?')">
-                                                    <i class="fa fa-trash-o" aria-hidden="true"></i> Delete
+                                                    <i class="fa fa-trash-o table" aria-hidden="true"></i> Delete
                                                 </button>
                                             </form>
                                         </td>

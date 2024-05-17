@@ -74,7 +74,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     text-align: center;
 }
 
-.mainmenu-area {background: none repeat scroll 0 0 #f83f5e;
+.mainmenu-area {background: none repeat scroll 0 0 #fbfbfb;
 font-family: "Roboto Condensed",sans-serif;
 text-transform: uppercase;
 width: 100%;
@@ -786,7 +786,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
 .product-breadcroumb > a::before {
     content: "/";
     position: absolute;
-    right: -10px;
+    right: -10px;   
 }
 .product-breadcroumb > a:last-child::before {
     display: none;
@@ -811,7 +811,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
 .product-inner-price {
     margin-bottom: 25px;
     color: #e10c25;
-
+    
 }
 .product-inner-price > ins {
     color: #5a88ca;
@@ -835,7 +835,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     padding: 6px 20px;display: inline-block;
     border-radius: 10px;
     margin-left: 10px;
-
+    
 }
 .add_to_cart_button:hover  {background-color: #222;color: #fff;text-decoration: none}
 form.cart {
@@ -951,7 +951,7 @@ div.quantity input.plus, div.quantity input.minus {
 td.product-quantity div.quantity {
     float: none;
     margin: 0;
-
+    
 }
 td.actions div.coupon {
     float: left;
@@ -1168,12 +1168,12 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     width: 100%;
     z-index: 999;
   }
-
+  
   .dropdown {
     position: relative;
     display: inline-block;
   }
-
+  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1182,7 +1182,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     z-index: 1;
     text-align: center;
   }
-
+  
   .dropdown-content a {
     text-decoration: none;
     display: block;
@@ -1192,25 +1192,24 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
-    color: #000;
+    background-color: #ddd; 
+    color: #000; 
 }
-
+  
 
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
+  
   .dropdown:hover .dropbtn {
     background-color: #7daff5;
     color: #FFF;
   }
   .login{
     text-align: right;
-
+   
   }
   .login a{
     font-size: 15px;
     padding: 10px;
   }
-
